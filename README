@@ -1,0 +1,415 @@
+seahorse-plugins
+-------------------------------------------
+Seahorse is a graphical interface for Gnu Privacy Guard.
+Its goal is to provide an easy to use Key Management Tool,
+along with an easy to use interface for encryption operations.
+
+Runtime requirements:
+  cygwin-1.5.25-15
+  gnome-panel-2.22.2-1
+  libatk1.0_0-1.24.0-1
+  libbonoboui2_0-2.24.0-1
+  libcryptui0-2.24.1-1
+  libdbus-glib_1_2-0.76-1
+  libgconf2_4-2.24.0-1
+  libglade2.0_0-2.6.3-2
+  libglib2.0_0-2.18.3-1
+  libgnome-keyring0-2.24.1-1
+  libgnome2_0-2.24.1-1
+  libgnomeui2_0-2.24.0-1
+  libgpgme11-1.1.6-1
+  libgtk2.0_0-2.14.5-1
+  libintl8-0.17-2
+  libnotify1-0.4.5-1
+  libpango1.0_0-1.22.3-1
+(gedit-seahorse)
+  gedit-2.24.2-1
+(nautilus-seahorse)
+  nautilus-2.24.2-1
+
+Build requirements:
+ (besides corresponding -devel packages)
+  autoconf2.5-2.63-1
+  automake1.10-1.10.1-2
+  binutils-20080624-2
+  cygport-0.4.3-1
+  gawk-3.1.6-1
+  gcc-core-3.4.4-1
+  gnome-common-2.24.0-1
+  intltool-0.40.5-1
+  libtool-2.2.6a-1
+  make-3.81-1
+  pkg-config-0.23a-2
+  rarian-0.8.1-1
+  sed-4.1.5-1
+
+Canonical homepage:
+  http://seahorse.sourceforge.net/
+
+Canonical download:
+  ftp://ftp.gnome.org/pub/GNOME/sources/seahorse/
+
+-------------------------------------------
+
+Build instructions:
+  unpack seahorse-2.24.1-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./seahorse-2.24.1-X.cygport all
+
+This will create:
+  /usr/src/gedit-seahorse-2.24.1-X.tar.bz2
+  /usr/src/libcryptui-devel-2.24.1-X.tar.bz2
+  /usr/src/libcryptui0-2.24.1-X.tar.bz2
+  /usr/src/nautilus-seahorse-2.24.1-X.tar.bz2
+  /usr/src/seahorse-2.24.1-X-src.tar.bz2
+  /usr/src/seahorse-2.24.1-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary packages:
+
+  /etc/gconf/schemas/seahorse-gedit.schemas
+  /etc/gconf/schemas/seahorse-plugins.schemas
+  /etc/postinstall/seahorse-plugins.sh
+  /etc/preremove/seahorse-plugins.sh
+  /usr/bin/seahorse-agent.exe
+  /usr/bin/seahorse-preferences.exe
+  /usr/bin/seahorse-tool.exe
+  /usr/lib/bonobo/servers/GNOME_SeahorseApplet.server
+  /usr/lib/seahorse/seahorse-applet.exe
+  /usr/share/applications/seahorse-pgp-encrypted.desktop
+  /usr/share/applications/seahorse-pgp-keys.desktop
+  /usr/share/applications/seahorse-pgp-preferences.desktop
+  /usr/share/applications/seahorse-pgp-signature.desktop
+  /usr/share/doc/seahorse-plugins-2.24.1/AUTHORS
+  /usr/share/doc/seahorse-plugins-2.24.1/COPYING
+  /usr/share/doc/seahorse-plugins-2.24.1/COPYING-DOCS
+  /usr/share/doc/seahorse-plugins-2.24.1/ChangeLog
+  /usr/share/doc/seahorse-plugins-2.24.1/HACKING
+  /usr/share/doc/seahorse-plugins-2.24.1/INSTALL
+  /usr/share/doc/seahorse-plugins-2.24.1/MAINTAINERS
+  /usr/share/doc/seahorse-plugins-2.24.1/NEWS
+  /usr/share/doc/seahorse-plugins-2.24.1/README
+  /usr/share/doc/seahorse-plugins-2.24.1/THANKS
+  /usr/share/gnome-2.0/ui/GNOME_SeahorseApplet.xml
+  /usr/share/gnome/help/seahorse-applet/C/legal.xml
+  /usr/share/gnome/help/seahorse-applet/C/seahorse-applet.xml
+  /usr/share/gnome/help/seahorse-applet/es/seahorse-applet.xml
+  /usr/share/gnome/help/seahorse-applet/fr/seahorse-applet.xml
+  /usr/share/gnome/help/seahorse-applet/it/seahorse-applet.xml
+  /usr/share/gnome/help/seahorse-applet/oc/seahorse-applet.xml
+  /usr/share/gnome/help/seahorse-applet/ru/seahorse-applet.xml
+  /usr/share/gnome/help/seahorse-applet/sv/seahorse-applet.xml
+  /usr/share/gnome/help/seahorse-applet/vi/seahorse-applet.xml
+  /usr/share/gnome/help/seahorse-plugins/C/figures/export.png
+  /usr/share/gnome/help/seahorse-plugins/C/figures/file-manager.png
+  /usr/share/gnome/help/seahorse-plugins/C/figures/generate.png
+  /usr/share/gnome/help/seahorse-plugins/C/figures/import.png
+  /usr/share/gnome/help/seahorse-plugins/C/figures/key-manager.png
+  /usr/share/gnome/help/seahorse-plugins/C/figures/key-properties.png
+  /usr/share/gnome/help/seahorse-plugins/C/figures/passphrase.png
+  /usr/share/gnome/help/seahorse-plugins/C/figures/preferences.png
+  /usr/share/gnome/help/seahorse-plugins/C/figures/recipients.png
+  /usr/share/gnome/help/seahorse-plugins/C/figures/seahorse-window.png
+  /usr/share/gnome/help/seahorse-plugins/C/figures/signature.png
+  /usr/share/gnome/help/seahorse-plugins/C/figures/text-editor.png
+  /usr/share/gnome/help/seahorse-plugins/C/legal.xml
+  /usr/share/gnome/help/seahorse-plugins/C/seahorse-plugins.xml
+  /usr/share/gnome/help/seahorse-plugins/cs/figures/export.png
+  /usr/share/gnome/help/seahorse-plugins/cs/figures/file-manager.png
+  /usr/share/gnome/help/seahorse-plugins/cs/figures/generate.png
+  /usr/share/gnome/help/seahorse-plugins/cs/figures/import.png
+  /usr/share/gnome/help/seahorse-plugins/cs/figures/key-manager.png
+  /usr/share/gnome/help/seahorse-plugins/cs/figures/key-properties.png
+  /usr/share/gnome/help/seahorse-plugins/cs/figures/passphrase.png
+  /usr/share/gnome/help/seahorse-plugins/cs/figures/preferences.png
+  /usr/share/gnome/help/seahorse-plugins/cs/figures/recipients.png
+  /usr/share/gnome/help/seahorse-plugins/cs/figures/seahorse-window.png
+  /usr/share/gnome/help/seahorse-plugins/cs/figures/signature.png
+  /usr/share/gnome/help/seahorse-plugins/cs/figures/text-editor.png
+  /usr/share/gnome/help/seahorse-plugins/cs/seahorse-plugins.xml
+  /usr/share/gnome/help/seahorse-plugins/de/figures/export.png
+  /usr/share/gnome/help/seahorse-plugins/de/figures/file-manager.png
+  /usr/share/gnome/help/seahorse-plugins/de/figures/generate.png
+  /usr/share/gnome/help/seahorse-plugins/de/figures/import.png
+  /usr/share/gnome/help/seahorse-plugins/de/figures/key-manager.png
+  /usr/share/gnome/help/seahorse-plugins/de/figures/key-properties.png
+  /usr/share/gnome/help/seahorse-plugins/de/figures/passphrase.png
+  /usr/share/gnome/help/seahorse-plugins/de/figures/preferences.png
+  /usr/share/gnome/help/seahorse-plugins/de/figures/recipients.png
+  /usr/share/gnome/help/seahorse-plugins/de/figures/seahorse-window.png
+  /usr/share/gnome/help/seahorse-plugins/de/figures/signature.png
+  /usr/share/gnome/help/seahorse-plugins/de/figures/text-editor.png
+  /usr/share/gnome/help/seahorse-plugins/de/seahorse-plugins.xml
+  /usr/share/gnome/help/seahorse-plugins/el/figures/export.png
+  /usr/share/gnome/help/seahorse-plugins/el/figures/file-manager.png
+  /usr/share/gnome/help/seahorse-plugins/el/figures/generate.png
+  /usr/share/gnome/help/seahorse-plugins/el/figures/import.png
+  /usr/share/gnome/help/seahorse-plugins/el/figures/key-manager.png
+  /usr/share/gnome/help/seahorse-plugins/el/figures/key-properties.png
+  /usr/share/gnome/help/seahorse-plugins/el/figures/passphrase.png
+  /usr/share/gnome/help/seahorse-plugins/el/figures/preferences.png
+  /usr/share/gnome/help/seahorse-plugins/el/figures/recipients.png
+  /usr/share/gnome/help/seahorse-plugins/el/figures/seahorse-window.png
+  /usr/share/gnome/help/seahorse-plugins/el/figures/signature.png
+  /usr/share/gnome/help/seahorse-plugins/el/figures/text-editor.png
+  /usr/share/gnome/help/seahorse-plugins/el/seahorse-plugins.xml
+  /usr/share/gnome/help/seahorse-plugins/en_GB/figures/export.png
+  /usr/share/gnome/help/seahorse-plugins/en_GB/figures/file-manager.png
+  /usr/share/gnome/help/seahorse-plugins/en_GB/figures/generate.png
+  /usr/share/gnome/help/seahorse-plugins/en_GB/figures/import.png
+  /usr/share/gnome/help/seahorse-plugins/en_GB/figures/key-manager.png
+  /usr/share/gnome/help/seahorse-plugins/en_GB/figures/key-properties.png
+  /usr/share/gnome/help/seahorse-plugins/en_GB/figures/passphrase.png
+  /usr/share/gnome/help/seahorse-plugins/en_GB/figures/preferences.png
+  /usr/share/gnome/help/seahorse-plugins/en_GB/figures/recipients.png
+  /usr/share/gnome/help/seahorse-plugins/en_GB/figures/seahorse-window.png
+  /usr/share/gnome/help/seahorse-plugins/en_GB/figures/signature.png
+  /usr/share/gnome/help/seahorse-plugins/en_GB/figures/text-editor.png
+  /usr/share/gnome/help/seahorse-plugins/en_GB/seahorse-plugins.xml
+  /usr/share/gnome/help/seahorse-plugins/es/figures/export.png
+  /usr/share/gnome/help/seahorse-plugins/es/figures/file-manager.png
+  /usr/share/gnome/help/seahorse-plugins/es/figures/generate.png
+  /usr/share/gnome/help/seahorse-plugins/es/figures/import.png
+  /usr/share/gnome/help/seahorse-plugins/es/figures/key-manager.png
+  /usr/share/gnome/help/seahorse-plugins/es/figures/key-properties.png
+  /usr/share/gnome/help/seahorse-plugins/es/figures/passphrase.png
+  /usr/share/gnome/help/seahorse-plugins/es/figures/preferences.png
+  /usr/share/gnome/help/seahorse-plugins/es/figures/recipients.png
+  /usr/share/gnome/help/seahorse-plugins/es/figures/seahorse-window.png
+  /usr/share/gnome/help/seahorse-plugins/es/figures/signature.png
+  /usr/share/gnome/help/seahorse-plugins/es/figures/text-editor.png
+  /usr/share/gnome/help/seahorse-plugins/es/seahorse-plugins.xml
+  /usr/share/gnome/help/seahorse-plugins/fr/figures/export.png
+  /usr/share/gnome/help/seahorse-plugins/fr/figures/file-manager.png
+  /usr/share/gnome/help/seahorse-plugins/fr/figures/generate.png
+  /usr/share/gnome/help/seahorse-plugins/fr/figures/import.png
+  /usr/share/gnome/help/seahorse-plugins/fr/figures/key-manager.png
+  /usr/share/gnome/help/seahorse-plugins/fr/figures/key-properties.png
+  /usr/share/gnome/help/seahorse-plugins/fr/figures/passphrase.png
+  /usr/share/gnome/help/seahorse-plugins/fr/figures/preferences.png
+  /usr/share/gnome/help/seahorse-plugins/fr/figures/recipients.png
+  /usr/share/gnome/help/seahorse-plugins/fr/figures/seahorse-window.png
+  /usr/share/gnome/help/seahorse-plugins/fr/figures/signature.png
+  /usr/share/gnome/help/seahorse-plugins/fr/figures/text-editor.png
+  /usr/share/gnome/help/seahorse-plugins/fr/seahorse-plugins.xml
+  /usr/share/gnome/help/seahorse-plugins/it/figures/export.png
+  /usr/share/gnome/help/seahorse-plugins/it/figures/file-manager.png
+  /usr/share/gnome/help/seahorse-plugins/it/figures/generate.png
+  /usr/share/gnome/help/seahorse-plugins/it/figures/import.png
+  /usr/share/gnome/help/seahorse-plugins/it/figures/key-manager.png
+  /usr/share/gnome/help/seahorse-plugins/it/figures/key-properties.png
+  /usr/share/gnome/help/seahorse-plugins/it/figures/passphrase.png
+  /usr/share/gnome/help/seahorse-plugins/it/figures/preferences.png
+  /usr/share/gnome/help/seahorse-plugins/it/figures/recipients.png
+  /usr/share/gnome/help/seahorse-plugins/it/figures/seahorse-window.png
+  /usr/share/gnome/help/seahorse-plugins/it/figures/signature.png
+  /usr/share/gnome/help/seahorse-plugins/it/figures/text-editor.png
+  /usr/share/gnome/help/seahorse-plugins/it/seahorse-plugins.xml
+  /usr/share/gnome/help/seahorse-plugins/oc/figures/export.png
+  /usr/share/gnome/help/seahorse-plugins/oc/figures/file-manager.png
+  /usr/share/gnome/help/seahorse-plugins/oc/figures/generate.png
+  /usr/share/gnome/help/seahorse-plugins/oc/figures/import.png
+  /usr/share/gnome/help/seahorse-plugins/oc/figures/key-manager.png
+  /usr/share/gnome/help/seahorse-plugins/oc/figures/key-properties.png
+  /usr/share/gnome/help/seahorse-plugins/oc/figures/passphrase.png
+  /usr/share/gnome/help/seahorse-plugins/oc/figures/preferences.png
+  /usr/share/gnome/help/seahorse-plugins/oc/figures/recipients.png
+  /usr/share/gnome/help/seahorse-plugins/oc/figures/seahorse-window.png
+  /usr/share/gnome/help/seahorse-plugins/oc/figures/signature.png
+  /usr/share/gnome/help/seahorse-plugins/oc/figures/text-editor.png
+  /usr/share/gnome/help/seahorse-plugins/oc/seahorse-plugins.xml
+  /usr/share/gnome/help/seahorse-plugins/ru/figures/export.png
+  /usr/share/gnome/help/seahorse-plugins/ru/figures/file-manager.png
+  /usr/share/gnome/help/seahorse-plugins/ru/figures/generate.png
+  /usr/share/gnome/help/seahorse-plugins/ru/figures/import.png
+  /usr/share/gnome/help/seahorse-plugins/ru/figures/key-manager.png
+  /usr/share/gnome/help/seahorse-plugins/ru/figures/key-properties.png
+  /usr/share/gnome/help/seahorse-plugins/ru/figures/passphrase.png
+  /usr/share/gnome/help/seahorse-plugins/ru/figures/preferences.png
+  /usr/share/gnome/help/seahorse-plugins/ru/figures/recipients.png
+  /usr/share/gnome/help/seahorse-plugins/ru/figures/seahorse-window.png
+  /usr/share/gnome/help/seahorse-plugins/ru/figures/signature.png
+  /usr/share/gnome/help/seahorse-plugins/ru/figures/text-editor.png
+  /usr/share/gnome/help/seahorse-plugins/ru/seahorse-plugins.xml
+  /usr/share/gnome/help/seahorse-plugins/sv/figures/export.png
+  /usr/share/gnome/help/seahorse-plugins/sv/figures/file-manager.png
+  /usr/share/gnome/help/seahorse-plugins/sv/figures/generate.png
+  /usr/share/gnome/help/seahorse-plugins/sv/figures/import.png
+  /usr/share/gnome/help/seahorse-plugins/sv/figures/key-manager.png
+  /usr/share/gnome/help/seahorse-plugins/sv/figures/key-properties.png
+  /usr/share/gnome/help/seahorse-plugins/sv/figures/passphrase.png
+  /usr/share/gnome/help/seahorse-plugins/sv/figures/preferences.png
+  /usr/share/gnome/help/seahorse-plugins/sv/figures/recipients.png
+  /usr/share/gnome/help/seahorse-plugins/sv/figures/seahorse-window.png
+  /usr/share/gnome/help/seahorse-plugins/sv/figures/signature.png
+  /usr/share/gnome/help/seahorse-plugins/sv/figures/text-editor.png
+  /usr/share/gnome/help/seahorse-plugins/sv/seahorse-plugins.xml
+  /usr/share/gnome/help/seahorse-plugins/vi/figures/export.png
+  /usr/share/gnome/help/seahorse-plugins/vi/figures/file-manager.png
+  /usr/share/gnome/help/seahorse-plugins/vi/figures/generate.png
+  /usr/share/gnome/help/seahorse-plugins/vi/figures/import.png
+  /usr/share/gnome/help/seahorse-plugins/vi/figures/key-manager.png
+  /usr/share/gnome/help/seahorse-plugins/vi/figures/key-properties.png
+  /usr/share/gnome/help/seahorse-plugins/vi/figures/passphrase.png
+  /usr/share/gnome/help/seahorse-plugins/vi/figures/preferences.png
+  /usr/share/gnome/help/seahorse-plugins/vi/figures/recipients.png
+  /usr/share/gnome/help/seahorse-plugins/vi/figures/seahorse-window.png
+  /usr/share/gnome/help/seahorse-plugins/vi/figures/signature.png
+  /usr/share/gnome/help/seahorse-plugins/vi/figures/text-editor.png
+  /usr/share/gnome/help/seahorse-plugins/vi/seahorse-plugins.xml
+  /usr/share/icons/hicolor/48x48/apps/seahorse-applet.png
+  /usr/share/icons/hicolor/scalable/apps/seahorse-applet.svg
+  /usr/share/locale/ar/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/az/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/be@latin/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/bg/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/bn/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/bn_IN/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/ca/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/cs/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/da/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/de/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/dz/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/el/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/en_CA/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/en_GB/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/es/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/et/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/eu/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/fi/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/fr/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/ga/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/gl/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/gu/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/he/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/hi/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/hr/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/hu/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/it/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/ja/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/kn/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/ko/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/lt/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/lv/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/mk/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/ml/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/mr/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/ms/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/nb/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/ne/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/nl/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/nn/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/oc/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/or/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/pa/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/pl/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/pt/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/pt_BR/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/ru/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/rw/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/si/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/sk/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/sl/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/sq/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/sr/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/sr@latin/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/sv/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/ta/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/te/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/th/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/tr/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/uk/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/vi/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/zh_CN/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/zh_HK/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/locale/zh_TW/LC_MESSAGES/seahorse-plugins.mo
+  /usr/share/man/man1/seahorse-agent.1.gz
+  /usr/share/man/man1/seahorse-tool.1.gz
+  /usr/share/mime/packages/seahorse.xml
+  /usr/share/omf/seahorse-applet/seahorse-applet-C.omf
+  /usr/share/omf/seahorse-applet/seahorse-applet-es.omf
+  /usr/share/omf/seahorse-applet/seahorse-applet-fr.omf
+  /usr/share/omf/seahorse-applet/seahorse-applet-it.omf
+  /usr/share/omf/seahorse-applet/seahorse-applet-oc.omf
+  /usr/share/omf/seahorse-applet/seahorse-applet-ru.omf
+  /usr/share/omf/seahorse-applet/seahorse-applet-sv.omf
+  /usr/share/omf/seahorse-applet/seahorse-applet-vi.omf
+  /usr/share/omf/seahorse-plugins/seahorse-plugins-C.omf
+  /usr/share/omf/seahorse-plugins/seahorse-plugins-cs.omf
+  /usr/share/omf/seahorse-plugins/seahorse-plugins-de.omf
+  /usr/share/omf/seahorse-plugins/seahorse-plugins-el.omf
+  /usr/share/omf/seahorse-plugins/seahorse-plugins-en_GB.omf
+  /usr/share/omf/seahorse-plugins/seahorse-plugins-es.omf
+  /usr/share/omf/seahorse-plugins/seahorse-plugins-fr.omf
+  /usr/share/omf/seahorse-plugins/seahorse-plugins-it.omf
+  /usr/share/omf/seahorse-plugins/seahorse-plugins-oc.omf
+  /usr/share/omf/seahorse-plugins/seahorse-plugins-ru.omf
+  /usr/share/omf/seahorse-plugins/seahorse-plugins-sv.omf
+  /usr/share/omf/seahorse-plugins/seahorse-plugins-vi.omf
+  /usr/share/pixmaps/seahorse-applet.svg
+  /usr/share/pixmaps/seahorse-plugins/22x22/seahorse-applet-encrypted.png
+  /usr/share/pixmaps/seahorse-plugins/22x22/seahorse-applet-key.png
+  /usr/share/pixmaps/seahorse-plugins/22x22/seahorse-applet-signed.png
+  /usr/share/pixmaps/seahorse-plugins/22x22/seahorse-applet-text.png
+  /usr/share/pixmaps/seahorse-plugins/22x22/seahorse-applet-unknown.png
+  /usr/share/pixmaps/seahorse-plugins/22x22/seahorse-key-personal.png
+  /usr/share/pixmaps/seahorse-plugins/22x22/seahorse-key.png
+  /usr/share/pixmaps/seahorse-plugins/22x22/seahorse-sign-bad.png
+  /usr/share/pixmaps/seahorse-plugins/22x22/seahorse-sign-ok.png
+  /usr/share/pixmaps/seahorse-plugins/22x22/seahorse-sign.png
+  /usr/share/pixmaps/seahorse-plugins/48x48/seahorse-applet-encrypted.png
+  /usr/share/pixmaps/seahorse-plugins/48x48/seahorse-applet-key.png
+  /usr/share/pixmaps/seahorse-plugins/48x48/seahorse-applet-signed.png
+  /usr/share/pixmaps/seahorse-plugins/48x48/seahorse-applet-text.png
+  /usr/share/pixmaps/seahorse-plugins/48x48/seahorse-applet-unknown.png
+  /usr/share/pixmaps/seahorse-plugins/48x48/seahorse-applet.png
+  /usr/share/pixmaps/seahorse-plugins/48x48/seahorse-key-personal.png
+  /usr/share/pixmaps/seahorse-plugins/48x48/seahorse-key.png
+  /usr/share/pixmaps/seahorse-plugins/48x48/seahorse-sign-bad.png
+  /usr/share/pixmaps/seahorse-plugins/48x48/seahorse-sign-ok.png
+  /usr/share/pixmaps/seahorse-plugins/48x48/seahorse-sign-unknown.png
+  /usr/share/pixmaps/seahorse-plugins/48x48/seahorse-sign.png
+  /usr/share/pixmaps/seahorse-plugins/scalable/seahorse-applet-encrypted.svg
+  /usr/share/pixmaps/seahorse-plugins/scalable/seahorse-applet-key.svg
+  /usr/share/pixmaps/seahorse-plugins/scalable/seahorse-applet-signed.svg
+  /usr/share/pixmaps/seahorse-plugins/scalable/seahorse-applet-text.svg
+  /usr/share/pixmaps/seahorse-plugins/scalable/seahorse-applet-unknown.svg
+  /usr/share/pixmaps/seahorse-plugins/scalable/seahorse-applet.svg
+  /usr/share/pixmaps/seahorse-plugins/scalable/seahorse-key-personal.svg
+  /usr/share/pixmaps/seahorse-plugins/scalable/seahorse-key-ssh.svg
+  /usr/share/pixmaps/seahorse-plugins/scalable/seahorse-key.svg
+  /usr/share/pixmaps/seahorse-plugins/scalable/seahorse-person.svg
+  /usr/share/pixmaps/seahorse-plugins/scalable/seahorse-share-keys.svg
+  /usr/share/pixmaps/seahorse-plugins/scalable/seahorse-sign-bad.svg
+  /usr/share/pixmaps/seahorse-plugins/scalable/seahorse-sign-ok.svg
+  /usr/share/pixmaps/seahorse-plugins/scalable/seahorse-sign-unknown.svg
+  /usr/share/pixmaps/seahorse-plugins/scalable/seahorse-sign.svg
+  /usr/share/seahorse-plugins/glade/seahorse-agent-cache.glade
+  /usr/share/seahorse-plugins/glade/seahorse-applet-preferences.glade
+  /usr/share/seahorse-plugins/glade/seahorse-multi-encrypt.glade
+  /usr/share/seahorse-plugins/glade/seahorse-notify.glade
+  /usr/share/seahorse-plugins/glade/seahorse-prefs.glade
+  /usr/share/seahorse-plugins/glade/seahorse-progress.glade
+
+(gedit-seahorse)
+  /usr/lib/gedit-2/plugins/cygseahorse-pgp.dll
+  /usr/lib/gedit-2/plugins/libseahorse-pgp.la
+  /usr/lib/gedit-2/plugins/seahorse-pgp.gedit-plugin
+
+(nautilus-seahorse)
+  /usr/lib/nautilus/extensions-2.0/cygnautilus-seahorse.dll
+  /usr/lib/nautilus/extensions-2.0/libnautilus-seahorse.la
+
+--------------------
+
+Port Notes:
+
+----- version 2.24.1-1 -----
+Initial release for GNOME 2.24.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/
