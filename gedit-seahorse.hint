@@ -1,5 +1,5 @@
 category: Editors Gnome
-requires: cygwin gedit libcryptui0 libdbus-glib_1_2 libglib2.0_0 libgtk2.0_0 libintl8 seahorse
+requires: cygwin gedit libcryptui0 libdbus-glib_1_2 libgcc1 libglib2.0_0 libgtk2.0_0 libintl8 seahorse
 external-source: seahorse-plugins
 sdesc: "GnuPG key manager for GNOME (GEdit plugin)"
 ldesc: "Seahorse is a graphical interface for Gnu Privacy Guard.
