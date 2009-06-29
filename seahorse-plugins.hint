@@ -1,5 +1,5 @@
 category: Editors Gnome
-requires: cygwin GConf2 libcryptui0 libdbus-glib_1_2 libgcc1 libgconf2_4 libglade2.0_0 libglib2.0_0 libgnome-keyring0 libgpgme11 libgtk2.0_0 libintl8 libnotify1 libpango1.0_0 seahorse
+requires: GConf2 libcryptui0 libdbus-glib_1_2 libgcc1 libgconf2_4 libglade2.0_0 libglib2.0_0 libgnome-keyring0 libgpgme11 libgtk2.0_0 libintl8 libnotify1 libpango1.0_0 seahorse
 sdesc: "GnuPG key manager for GNOME (accessories)"
 ldesc: "Seahorse is a graphical interface for Gnu Privacy Guard.
 Its goal is to provide an easy to use Key Management Tool,
