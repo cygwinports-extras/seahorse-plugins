@@ -1,0 +1,64 @@
+--- origsrc/seahorse-plugins-2.30.1/agent/seahorse-agent-status.c	2010-01-24 20:06:50.000000000 -0600
++++ src/seahorse-plugins-2.30.1/agent/seahorse-agent-status.c	2010-06-29 02:56:24.822728800 -0500
+@@ -68,7 +68,7 @@ window_destroy ()
+ }
+ 
+ /* When window close clicked we close window */
+-G_MODULE_EXPORT static int
++G_MODULE_EXPORT int
+ delete_event (GtkWidget *widget, GdkEvent *event, gpointer data)
+ {
+     window_destroy ();
+@@ -76,14 +76,14 @@ delete_event (GtkWidget *widget, GdkEven
+ }
+ 
+ /* When close button clicked */
+-G_MODULE_EXPORT static void
++G_MODULE_EXPORT void
+ close_clicked (GtkButton *button, SeahorseWidget *swidget)
+ {
+     window_destroy ();
+ }
+ 
+ /* Clear button, clear cache and close */
+-G_MODULE_EXPORT static void
++G_MODULE_EXPORT void
+ clear_clicked (GtkButton *button, SeahorseWidget *swidget)
+ {
+     seahorse_agent_cache_clearall ();
+@@ -224,7 +224,7 @@ on_settings_activate (GtkWidget *item, g
+ }
+ 
+ /* Called when icon clicked */
+-G_MODULE_EXPORT static void
++G_MODULE_EXPORT void
+ tray_activate (GtkStatusIcon *icon, void *data)
+ {
+     if (g_window)
+@@ -234,7 +234,7 @@ tray_activate (GtkStatusIcon *icon, void
+ }
+ 
+ /* Called when icon clicked */
+-G_MODULE_EXPORT static void
++G_MODULE_EXPORT void
+ tray_popup_menu (GtkStatusIcon *icon, guint button, guint32 timestamp, void *data)
+ {
+     GtkWidget *w;
+--- origsrc/seahorse-plugins-2.30.1/plugins/nautilus/seahorse-pgp-preferences.c	2010-01-24 20:06:50.000000000 -0600
++++ src/seahorse-plugins-2.30.1/plugins/nautilus/seahorse-pgp-preferences.c	2010-06-29 02:30:49.785929700 -0500
+@@ -41,13 +41,13 @@ static const GOptionEntry options[] = {
+     { NULL }
+ };
+ 
+-G_MODULE_EXPORT static void
++G_MODULE_EXPORT void
+ destroyed (GtkObject *object, gpointer data)
+ {
+ 	exit (0);
+ }
+ 
+-G_MODULE_EXPORT static void
++G_MODULE_EXPORT void
+ help_clicked (GtkObject *object, SeahorseWidget *swidget)
+ {
+     seahorse_widget_show_help (swidget);

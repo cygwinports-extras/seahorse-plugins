@@ -1,7 +1,9 @@
 inherit gnome2
 
+PATCH_URI="2.30-export-static.patch"
+
 PKG_NAMES="${PN} gedit-seahorse nautilus-seahorse"
-seahorse_plugins_CONTENTS="etc/ usr/bin/ usr/lib/bonobo/ usr/lib/seahorse/ usr/share/"
+seahorse_plugins_CONTENTS="etc/ usr/bin/ usr/share/"
 gedit_seahorse_CONTENTS="usr/lib/gedit-2/"
 nautilus_seahorse_CONTENTS="usr/lib/nautilus/"
 
